@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reunion Form</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      color: rgb(30, 92, 199);
+      background-image: url(https://img.freepik.com/free-vector/summertime-party-background_1048-910.jpg?t=st=1732736294~exp=1732739894~hmac=e7250d5e81eda4776908d62a4f72d94764f33512a9bb7cc21754099d7ac51a54&w=900);
+      background-size: cover;
+      width: 300px;
+      height: 400px;
+      padding: 20px;
+    }
+    .white-layer{
+        background-color: rgba(255, 255, 255, 0.8);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    .form-content{
+        position: relative;
+        z-index: 2;
+    }
+    .text-center{
+        text-align: center;
+    }
+    .container {
+      width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .comment{
+        display: block;
+        margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+    <div class="white-layer"></div>
+    <div class="form-content">
+  <div class="container">
+    <h1 class="text-center">Reunion Form</h1>
+    <p class="text-center">Time to rekindle some good ol' memories! See you soon!</p>
+    <hr>
+    <p class="text-center">Date: 25-06-2023 | Time: 6pm onwards | Address: Our garage</p>
+    <label for="join">Would you like to join us? *</label>
+    <input type="radio" id="join" name="join" value="yes" required> Yes
+    <input type="radio" id="join" name="join" value="no" required> No
+    <br><br>
+    <label for="name">Name *</label>
+    <input type="text" name="" id="" placeholder="First" required>
+    <input type="text" name="" id="" placeholder="Last" required>
+    <br><br>
+    <label class="label" for="phone">Phone *</label>
+    <input style="width: 332px;" type="tel" id="phone" name="phone" placeholder="123-456-7890" required>
+    <br><br>
+    <label for="">Your Meal Preference *</label>
+    <input type="radio" name="meal" id="">Vegeterian
+    <input type="radio" name="meal" id="">Non-Vegeterian
+    <br><br>
+    <label for="">What kind of games are you interested in?</label>
+    <input type="checkbox" name="indoor" id="">indoor
+    <input type="checkbox" name="outdoor" id="">outdoor
+    <input type="checkbox" name="board" id="">board
+    <input type="checkbox" name="ball-games" id="">Ball games
+    <br><br>
+    <label class="comment" for="">Do you have any questions?</label>
+    <textarea style="width: 500px; height: 75px;" name="" id=""></textarea>
+    <br><br>
+    <button style="margin: 20px 250px; background-color: blue ;" type="submit">Submit</button>
+</div>
+  </div>
+</body>
+</html>
