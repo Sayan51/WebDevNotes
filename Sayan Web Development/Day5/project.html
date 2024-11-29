@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .parent{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .parent div{
+        height: 200px;
+        width: 200px;
+        background-image: url(https://img.freepik.com/premium-photo/natural-beautiful-rainy-day-scenery-landscape-acrylic-painting-paper-hd-acrylic-image_985593-347.jpg);
+        background-color: blue;
+        background-size: cover;
+        background-position: center;
+        transition: all 0.3s ease;
+    }
+    .parent div:hover{
+        transform: scale(1.1);
+    }
+    @media (max-width:700px){
+        .parent div{
+            height: 200px;
+            width: 200px;
+            border-radius: 25%;
+            background-image: url(https://t3.ftcdn.net/jpg/03/70/26/94/360_F_370269459_e5I6EAv0NJ3E1EDwXG6HuSmwb3LK5vFa.jpg);
+        }
+    }
+    @media (max-width:300px){
+        .parent div{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-image: url(https://images.pexels.com/photos/1525039/pexels-photo-1525039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+        <div class="child4"></div>
+        <div class="child5"></div>
+        <div class="child6"></div>
+    </div>
+</body>
+</html>
