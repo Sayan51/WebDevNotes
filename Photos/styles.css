@@ -61,6 +61,18 @@ nav ul li a:hover {
   margin-left: 4%;
   
 }
+.hero-video{
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Center video horizontally */
+  align-items: center; /* Center video vertically */
+  padding-right: 4%; /* Add some space on the right */
+}
+.hero-video video {
+  max-width: 120%; /* Make sure video fits within its container */
+  height: 140%; /* Maintain aspect ratio */
+  border-radius: 50% 50% 50% 50%;
+}
 
 .hero-content h1 {
   font-size: 48px;
