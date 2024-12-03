@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            min-height: 100vh;
+            border: 2px solid black;
+            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .row1 {
+            border: 2px solid black;
+            padding: 2px;
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            height: 100px;
+            width: 630px;
+            margin-top: 20px;
+        }
+        .row1child1, .row1child2, .row1child3 {
+            border: 2px solid black;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row1">
+            <div class="row1child1"></div>
+            <div class="row1child2"></div>
+            <div class="row1child3"></div>
+        </div>
+    </div>
+    <script>
+        // Function to check if a number is even or odd
+        function checkEvenOdd(num) {
+            if (num % 2 === 0) {
+                console.log(`${num} is even`);
+            } else {
+                console.log(`${num} is odd`);
+            }
+        }
+
+        // Function to display values of variables
+        function displayValues(a, b) {
+            document.write(`The value of a is ${a} and the value of b is ${b}`);
+        }
+
+        // Function to get user's favorite drink
+        function getFavoriteDrink() {
+            let favDrink = prompt("What's your favorite cocktail drink?");
+            let text;
+            switch (favDrink) {
+                case "Coca-Cola":
+                    text = "Excellent choice! Coca-Cola is good for your soul.";
+                    break;
+                case "Pepsi":
+                    text = "Pepsi is my favorite too!";
+                    break;
+                case "Sprite":
+                    text = "Really? Are you sure the Sprite is your favorite?";
+                    break;
+                default:
+                    text = "I have never heard of that one!";
+            }
+            console.log(text);
+        }
+
+        // Function to run indefinitely without blocking the main thread
+        function runIndefinitely() {
+            setInterval(() => {
+                console.log("This will run indefinitely, but without blocking the main thread.");
+            }, 1000);
+        }
+
+        // Call the functions
+        checkEvenOdd(100);
+        displayValues(10, 20);
+        getFavoriteDrink();
+        runIndefinitely();
+    </script>
+</body>
+</html>
+```
