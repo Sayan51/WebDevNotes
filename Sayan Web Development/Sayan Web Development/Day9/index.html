@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            margin-top: 25%;
+            background-color: aqua;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold; 
+            box-shadow: 2px 2px 10px black;
+        }
+        button{
+            background-color: rgb(243, 65, 65);
+            margin-top: 20px;
+        }
+        .bulb {
+            display: inline-block;
+            height: 100px;
+            margin: 20px;
+        }
+        .lightbulb {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1 id="check">Check Your Eligibility</h1>
+    <button onclick="checkAge()">Check your age</button> -->
+    <div class="bulb">
+        <div class="lightbulb" id="lightbulb"></div>
+        <button onclick="bulbSwitch()">Switch</button>
+    </div>
+    <script>
+        // const checkAge = () => {
+        //     let age = window.prompt("Please Enter Your Age")
+        //     let check = document.getElementById("check")
+        //     if (age >= 18) {
+        //         check.innerHTML = "You are eligible to vote"
+        //     } else {
+        //         check.innerHTML = "You are not eligible to vote"
+        //     }
+        // }
+
+        let status = false
+        const bulbSwitch = () => {
+            const bulb = document.getElementById("lightbulb");
+            if (status) {
+                bulb.style.background = "#ccc";
+                status = false;
+            } else {
+                bulb.style.background = "yellow";
+                status = true;
+            }
+        }
+    </script>
+</body>
+</html>
+</body>
+</html>

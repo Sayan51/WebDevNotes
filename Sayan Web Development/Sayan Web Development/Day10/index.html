@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        color: white;
+        background-image: linear-gradient(to right,red,orange);
+    }
+</style>
+<body>
+    <marquee behavior="" direction="" spellcheck="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eius magni odio esse ipsum eveniet molestias nisi repudiandae ea sunt nostrum doloremque, doloribus assumenda perferendis quidem quo aliquam labore sint.</marquee>
+    <script>
+        // Create an object
+        const person = {
+            firstName: 'John',
+            lastName: 'Doe',
+            age: 50,
+            state:'Delhi',
+            PrimeMinister:'Narendra Modi'
+        }
+
+        // Destructuring
+        try{
+            let {firstName,lastName} = person;
+            console.log(firstName,lastName);
+        } catch (error) {
+            console.log(error)
+        }
+    </script>
+</body>
+</html>

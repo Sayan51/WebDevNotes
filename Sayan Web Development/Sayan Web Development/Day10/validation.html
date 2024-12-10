@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    form input{
+        padding: 10px 20px;
+        border-radius: 50px;
+    }
+    form input:hover{
+        box-shadow: 5px 5px 103px 10px gray;
+    }
+    form label{
+        font-size: 20px;
+    }
+    button{
+        padding: 10px 20px;
+        border-radius: 50px;
+        background-color: white;
+
+    }
+    button:hover{
+        background-color: gray;
+        color: white;
+    }
+    body{
+       background-color: black;
+       color: white;
+    }
+    
+</style>
+<body>
+    <form action="">
+        <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">This is Form Validation</h1>
+        <label for="">USERNAME</label>
+        <input type="text" value="" id="username">
+        <label for="">E-MAIL</label>
+        <input type="text" value="" id="email" required>
+        <label for="">PASSWORD</label>
+        <input type="text" name="" id="pass">
+        <label for="">CONFIRM PASSWORD</label>
+        <input type="text" name="" id="cnfpass">
+        <button onclick="Submitform()"><b>Submit</b></button>
+    </form>
+
+    <script>
+        // this is example of arrow function
+        // functiom SubmitForm(){
+        //     var username = document.getElementById("username").value
+        // }
+        const ValidateEmail=(email)=>{
+            if(email.includes(".") && email.includes("@")){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+
+        const submitForm=()=>{
+            let username = document.getElementById("username").value
+            let pass = document.getElementById("pass").value
+            let cnfpass = document.getElementById("cnfpass").value
+            let email = document.getElementById("email").value
+            console.log("Checking the form")
+
+            if(!username || !pass || !cnfpass){
+                window.alert("Please fill all the fields.")
+                return
+            }
+            if(!ValidateEmail(email)){
+                window.alert("Please enter a valid email address.")
+                return
+            }
+            if(pass.length<8){
+                window.alert("Password must be at least 8.")
+                return
+            }
+            if(pass !== cnfpass){
+                window.alert("Form submitted Successfully.")
+            }
+        }
+    </script>
+</body>
+</html>

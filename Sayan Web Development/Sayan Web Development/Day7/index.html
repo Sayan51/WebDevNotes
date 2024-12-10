@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>.box{
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        box-shadow: 2px 2px 10px black;
+        
+    }
+</style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <h1 id="name">Hello</h1>
+    <div class="box"></div>
+    <script>
+       
+//         for (let i=0;i<10;i++){ 
+// console.log(i)
+// console.log("This is Sayan")
+//         }
+        // let i=0;
+
+        // while(i<11){
+        //     console.log(`This is while loop running ${i} times`)
+        //     i++;
+        // }
+        // let j=0;
+        // do{
+        //     console.log(`This is do while loop running ${j} times`)
+        //     j++;
+        //   } while(j<11)
+        //    const changeName=()=>{
+        //     document.getElementById("name").innerHTML="Sayan";
+        //    }
+        //    setTimeout(()=>{
+        //     changeName();
+        //     },3000)
+        //     const changeSize=()=>{
+        //         document.querySelector(".box").style.backgroundColor="yellow";
+        //         document.querySelector(".box").style.borderRadius="50%";
+        //     } 
+        //     setTimeout(()=>{
+        //         changeSize();
+        //         },3000)
+        // const fruits = ["apple","mango","pine-apple","grapes","banana","papaya"];
+        // push
+        // fruits.push("orange");
+        // pop
+        // fruits.pop()
+        // fruits.pop()
+
+        // console.log(fruits[2]);
+
+        // for(let x in fruits){
+        //     console.log(`i like to eat ${fruits[x]}`)
+        // }
+        // const vegetables = ["potato","onnion","tomato","chilli","cabage"];
+
+        // for(let x in vegetables){
+        //     console.log(`i like to eat ${vegetables[x]}`)
+        // }
+        // const ages=[30,11,72,24,13,15]
+        // console.log(ages.sort())
+        // console.log(ages.reverse())
+
+        // ascending order
+        // console.log(ages.sort((a,b)=>a-b))
+
+        // descending order
+        // console.log(ages.sort((a,b)=>b-a))
+
+        // mapping
+        // ages.map((x)=> {
+        //     console.log(`I am ${x} years old using map `)
+        // })
+        // for each
+        // ages.forEach((x)=>{
+        //     console.log(`I am ${x} years old using for each `)
+        // })
+        // filter
+        // const voters=ages.filter((age)=>age>18)
+        // console.log(voters)
+
+        // const retired=ages.filter((age)=>age>60)
+        // console.log(retired)
+
+        // const Students=["Sayan","Sovan","Sankha","Biswarup","Deba"]
+        // const SlicedArray=Students.slice(2,5)
+        // console.log(SlicedArray)
+
+        // console.log("Original array",Students)
+        // const splicedArray=Students.splice(2,2,"Chandan","Bisnu")
+        // console.log(Students)
+        
+        // // include
+        // const checkname=Students.includes("Bisnu")
+        // console.log(checkname)
+
+        // const sampleNegetive=Students.at(-4)
+        // console.log(sampleNegetive)
+
+        // let
+        // var 
+        // const
+        function myfunction(){
+            var name="Rakesh"
+            console.log(name)
+        }
+        myfunction()
+
+        
+        var name="sovan"
+        function myfunction(){
+            var name="Rakesh"
+            console.log(name)
+        }
+        myfunction()
+
+        // let age=92.0 //number
+        // let age=false //bulian
+
+        //objects
+        let Student={
+          name:"Sayan",
+          class:"XII",
+          rollNo:12,
+          marks:90.5
+    }
+    console.log(Student)
+
+    const car={
+        name:"Audi",
+        model:"V",
+        year:2020
+    }
+    console.log("These are the values",Object.values(car))
+    console.log("These are the keys",Object.keys(car))
+
+    //nested object
+    const car2={
+        name:"Audi",
+        model:"V",
+        year:2020,
+        feature:{
+            color:["red","yellow","green"],
+            engine:"V0",
+            top_speed:'400 km/hr'
+        }
+    }
+    console.log(car2)
+
+    const myself={
+        First_Name:"Sayan",
+        Last_Name:"Pradhan",
+        Age:20,
+        Gender:"Male",
+        Class:"BTech 1st year",
+        Roll_No:247054,
+        Address:{
+            State:"West Bengal",
+            City:"Kolkata",
+            Pincode:700012
+        }
+    }
+    console.log(myself)
+
+    </script>
+</body>
+</html>
